@@ -1,7 +1,8 @@
 package com.greatlearning.floor_assembling;
 
 public class Assembling {
-	public static int insertValue(int value, int[] tree, int n) { // when array is empty
+	//Inserts value into max heap
+	public static int insertValue(int value, int[] tree, int n) { 
 		n = n + 1;
 
 		tree[n] = value;
@@ -18,7 +19,7 @@ public class Assembling {
 
 		return tree[1];
 	}
-
+	//Deleting values from max heap
 	public static int delete(int[] tree, int n) {
 		tree[1] = tree[n];
 
@@ -40,7 +41,7 @@ public class Assembling {
 		}
 		return tree[1];
 	}
-
+	//Swapping of numbers
 	public static void swap(int index1, int index2, int[] tree) {
 		int temp;
 		temp = tree[index1];
